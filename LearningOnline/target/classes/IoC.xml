@@ -9,5 +9,30 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd
 		">
+	<bean id="dataSource"
+		  class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"
+				  value="com.mysql.jdbc.Driver" />
+		<property name="url"
+				  value="jdbc:mysql://localhost:3306/dblearningonline" />
+		<property name="username" value="root" />
+		<property name="password" value="" />
+	</bean>
 
+	<bean id="mySessionFactory"
+		  class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan" value="com.nhom13.entity"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="mySessionFactory"/>
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>
