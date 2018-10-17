@@ -1,9 +1,10 @@
 package com.nhom13.config;
 
 
-import com.nhom13.service.UserSecurityService;
+import com.nhom13.service.impl.UserSecurityService;
 import com.nhom13.utility.SecurityUtility;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -24,6 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UserSecurityService userSecurityService;
 
+
     private BCryptPasswordEncoder passwordEncoder() {
         return SecurityUtility.passwordEncoder();
     }
@@ -42,21 +44,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests().
-                /*	antMatchers("/**").*/
-                        antMatchers(PUBLIC_MATCHERS).
-                permitAll().anyRequest().authenticated();
-
-        http
+                .authorizeRequests()
+                .antMatchers(PUBLIC_MATCHERS).
+                permitAll().anyRequest().authenticated()
+                .antMatchers("/user").hasRole("USER")
+                .antMatchers("/admin").hasRole("ADMIN")
+                .and()
                 .csrf().disable().cors().disable()
-                .formLogin().failureUrl("/login?error")
-                /*.defaultSuccessUrl("/")*/
-                .loginPage("/login").permitAll()
+                .formLogin()
+                .loginPage("/login")
+                .usernameParameter("username")
+                .passwordParameter("password")
+                .defaultSuccessUrl("/user")
+                .failureUrl("/login?error")
                 .and()
                 .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/?logout").deleteCookies("remember-me").permitAll()
                 .and()
                 .rememberMe();
+
     }
 
     @Autowired

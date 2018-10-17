@@ -7,45 +7,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9446f9c9-1fcb-4a45-8bd3-3cd99020f330" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/PasswordResetTokenDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/RoleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/PasswordResetTokenDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/RoleDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/tick.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/IoC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/IoC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/IoC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/IoC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/PasswordResetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/PasswordResetToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/service/UserSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IoC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IoC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/security/PasswordResetToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/security/PasswordResetToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/security/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/security/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/security/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/entity/security/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/service/UserSecurityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/utility/MailConstructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/classes/com/nhom13/utility/MailConstructor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/views/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearningOnline-1.0-SNAPSHOT/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/entity/security/PasswordResetToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/entity/security/PasswordResetToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/entity/security/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/entity/security/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/entity/security/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/entity/security/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/service/UserSecurityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhom13/utility/MailConstructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhom13/utility/MailConstructor.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,34 +72,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="17">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/controller/HomeController.java">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="21">
+              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1357#1358#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -93,22 +97,62 @@
       <file leaf-file-name="IoC.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/IoC.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="405">
+              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailConstructor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/SecurityUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="153">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRole.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserSecurityService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserSecurityService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -116,17 +160,8 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+            <state relative-caret-position="629">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -137,6 +172,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -144,6 +180,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>mysql</find>
+      <find>createUser</find>
+      <find>im</find>
+      <find>findByUsername</find>
+      <find>createPasswordResetTokenForUser</find>
+      <find>templateEngine</find>
+      <find>locale</find>
+      <find>AuthenticationManagerBuilder</find>
+      <find>username</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,23 +205,42 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Authority.java" />
         <option value="$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/service/impl/UserSecurityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nhom13/service/UserSercurityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nhom13/utility/SecurityUtility.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/PasswordResetToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
         <option value="$USER_HOME$/IdeaProjects/springsecurity/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/IoC.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teacher.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" />
+        <option value="$USER_HOME$/Downloads/student_login_form-web_Free06-08-2018_243611188/web/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserSecurityService.java" />
+        <option value="$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/RoleDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/PasswordResetTokenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/PasswordResetTokenImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailSample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/RoleDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/PasswordResetTokenDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/PasswordResetToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/nhom13/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -220,7 +283,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="68" />
     <option name="y" value="7" />
     <option name="width" value="1822" />
@@ -233,6 +296,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,7 +346,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="nhom13" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearningOnline" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +355,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="nhom13" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearningOnline" type="b2602c69:ProjectViewProjectNode" />
@@ -323,12 +388,20 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LearningOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -344,9 +417,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\java\com\nhom13\utility" />
+      <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\webapp\resources\font" />
       <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\webapp\resources\images" />
-      <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\webapp\resources\js" />
       <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\webapp\resources\css" />
+      <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\webapp\resources\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HoangNV\Desktop\CNWebTienTien\LearningOnline\src\main\webapp\WEB-INF" />
@@ -492,11 +567,24 @@
       <workItem from="1539090070572" duration="2802000" />
       <workItem from="1539092999654" duration="8563000" />
       <workItem from="1539179424433" duration="8505000" />
+      <workItem from="1539262879345" duration="838000" />
+      <workItem from="1539269031487" duration="286000" />
+      <workItem from="1539269390032" duration="595000" />
+      <workItem from="1539270097959" duration="1505000" />
+      <workItem from="1539483694035" duration="52000" />
+      <workItem from="1539519324278" duration="4160000" />
+      <workItem from="1539528365962" duration="654000" />
+      <workItem from="1539609022099" duration="1412000" />
+      <workItem from="1539612057717" duration="4997000" />
+      <workItem from="1539696277359" duration="10954000" />
+      <workItem from="1539781403797" duration="4838000" />
+      <workItem from="1539788556563" duration="1659000" />
+      <workItem from="1539790597277" duration="940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20147000" />
+    <option name="totallyTimeSpent" value="53037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -520,29 +608,28 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3293718" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293718" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31694403" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3293718" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293718" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293718" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -550,6 +637,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293718" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3293718" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -558,7 +646,6 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -567,6 +654,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -580,414 +668,384 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhom13/controller/HomeController.java</url>
+          <line>54</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserSecurityService.java</url>
+          <line>16</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserSecurityService.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="14" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="simpleMailMessage" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>simpleMailMessage</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/adminportal/src/main/java/com/adminportal/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="4675">
+          <caret line="275" column="1" selection-start-line="275" selection-start-column="1" selection-end-line="275" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/adminportal/src/main/java/com/adminportal/AdminportalApplication.java">
+    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/resources/templates/myAccount.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="147">
+          <caret line="110" column="43" selection-start-line="93" selection-start-column="36" selection-end-line="110" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/Bookstore/src/main/resources/IoC.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/register.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="37" column="68" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="37" selection-end-column="68" />
+        <state relative-caret-position="17">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/service/impl/BookServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="17">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/repository/BookRepository.java">
+    <entry file="file://$USER_HOME$/Downloads/stylish_register_form-web_Free08-03-2018_1945079012/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="221">
+          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.4.RELEASE/spring-security-core-5.0.4.RELEASE.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="122">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/repository/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/PasswordResetTokenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="23" />
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/domain/security/Role.java">
+    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="144" column="26" lean-forward="true" selection-start-line="141" selection-start-column="8" selection-end-line="144" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/domain/security/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/domain/security/Authority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/service/impl/UserSecurityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/security/SecureRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/utility/SecurityUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.4.RELEASE/spring-security-config-5.0.4.RELEASE.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="66" column="103" selection-start-line="66" selection-start-column="103" selection-end-line="66" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/service/UserSecurityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/SecurityUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/domain/security/PasswordResetToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/PasswordResetToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/Bookstore/src/main/webapp/resources/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/jquery-3.3.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="138">
+          <caret line="54" column="51" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="54" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10268">
-          <caret line="656" column="5" selection-start-line="656" selection-start-column="5" selection-end-line="656" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="525" column="27" lean-forward="true" selection-start-line="516" selection-start-column="8" selection-end-line="525" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailSample.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="157">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.18.RELEASE/spring-core-4.3.18.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="522" selection-start-line="522" selection-end-line="522" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="477" selection-start-line="477" selection-end-line="477" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.18.RELEASE/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/RoleDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/PasswordResetTokenDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Authority.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/Bookstore/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/Bookstore/src/main/webapp/WEB-INF/views/privatePage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/PasswordResetToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/Bookstore/src/main/webapp/WEB-INF/views/footer.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="54" />
+        <state relative-caret-position="119">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/impl/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        <state relative-caret-position="351">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/springsecurity/src/main/java/com/hoangnv/controller/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/RoleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/springsecurity/src/main/java/com/hoangnv/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/utility/MailConstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/springsecurity/src/main/java/com/hoangnv/controller/MailMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="75" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/springsecurity/src/main/resources/IoC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/IoC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/springsecurity/src/main/java/com/hoangnv/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="51" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/springsecurity/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="47" column="21" selection-start-line="42" selection-start-column="7" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="198">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/MailConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="201">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/service/impl/UserSecurityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.4.RELEASE/spring-security-config-5.0.4.RELEASE.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="66" column="103" selection-start-line="66" selection-start-column="103" selection-end-line="66" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="1513">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/29Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/Complete E-Commerce Course - Java,Spring,Hibernate and MySQL 1/10 Some More Features/082 9/Bookstore/src/main/java/com/bookstore/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/IoC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/utility/SecurityUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/service/impl/UserSecurityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/entity/security/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nhom13/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding>
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
           </folding>
         </state>
       </provider>
