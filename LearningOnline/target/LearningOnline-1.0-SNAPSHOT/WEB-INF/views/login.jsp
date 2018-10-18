@@ -33,8 +33,8 @@
         <div class="agile-field-txt">
             <input type="password" name="password" placeholder="password" required="" id="myInput" />
             <div class="agile_label">
-                <%--<input id="check3" name="check3" type="checkbox" value="show password">--%>
-                <%--<label class="check" for="check3">Remember me ?</label>--%>
+                <input id="check3" name="check3" type="checkbox" value="show password">
+                <label class="check" for="check3">Remember me ?</label>
                 <a href="/forgetPassword" style="float: right">Forger password</a>
             </div>
         </div>

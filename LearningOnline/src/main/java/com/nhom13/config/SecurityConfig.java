@@ -31,9 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     private static final String[] PUBLIC_MATCHERS = {
-            "/css/**",
-            "/js/**",
-            "/image/**",
+            "/resources/**",
             "/",
             "/newUser",
             "/forgetPassword",
@@ -47,8 +45,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers(PUBLIC_MATCHERS).
                 permitAll().anyRequest().authenticated()
-                .antMatchers("/user").hasRole("USER")
-                .antMatchers("/admin").hasRole("ADMIN")
                 .and()
                 .csrf().disable().cors().disable()
                 .formLogin()

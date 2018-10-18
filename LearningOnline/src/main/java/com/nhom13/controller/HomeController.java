@@ -1,6 +1,7 @@
 package com.nhom13.controller;
 
 import com.nhom13.entity.User;
+import com.nhom13.entity.security.Authority;
 import com.nhom13.entity.security.Role;
 import com.nhom13.entity.security.UserRole;
 import com.nhom13.service.UserService;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
@@ -72,7 +74,7 @@ public class HomeController {
 
         Role role = new Role();
         role.setRoleId(1);
-        role.setRoleName("ROLE_USER");
+        role.setRoleName("USER");
 
         Set<UserRole> userRoles = new HashSet<>();
         userRoles.add(new UserRole(user,role));
@@ -94,7 +96,15 @@ public class HomeController {
     }
 
     @RequestMapping("/user")
-    public String teacher(){
+    @PreAuthorize("hasAuthority('USER')")
+    public String teacher(Principal principal){
+        User user = userService.findByUsername(principal.getName());
         return "teacher";
+    }
+
+    @RequestMapping("/admin")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public String admin(){
+        return "register";
     }
 }
