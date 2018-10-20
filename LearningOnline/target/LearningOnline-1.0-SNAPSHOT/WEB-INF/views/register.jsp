@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Register</title>
-    <jsp:include page="header.jsp"></jsp:include>
+    <jsp:include page="common/header.jsp"></jsp:include>
     <link rel="stylesheet" href="/resources/css/register.css" type="text/css" media="all" />
     <!-- Style-CSS -->
     <link rel="stylesheet" href="/resources/css/font-awesome.css">
@@ -106,7 +106,7 @@
 <!-- //password-script -->
 
 
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="common/footer.jsp"></jsp:include>
 
 </body>
 </html>

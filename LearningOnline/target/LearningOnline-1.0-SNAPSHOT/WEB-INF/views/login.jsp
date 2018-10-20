@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Login</title>
-    <jsp:include page="header.jsp"></jsp:include>
+    <jsp:include page="common/header.jsp"></jsp:include>
     <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
     <script>
         addEventListener("load", function () {
