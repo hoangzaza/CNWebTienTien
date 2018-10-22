@@ -46,7 +46,7 @@
                 <ul class="list-unstyled">
                     <li>
                         <p>
-                            <i class="fa fa-home mr-2"></i>D5-102 Đại học Bách khoa Hà Nội
+                            <i class="fa fa-home mr-2"></i> D5-102 Đại học Bách khoa Hà Nội
                         </p>
                     </li>
                     <p>
