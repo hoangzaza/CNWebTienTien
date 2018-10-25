@@ -1,4 +1,3 @@
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%--
   Created by IntelliJ IDEA.
@@ -15,9 +14,6 @@
     <link type="text/css" rel="stylesheet" href="/resources/css/home.css">
 </head>
 <body>
-<security:authorize access="isAuthenticated()">
-    authenticated as <security:authentication property="principal.username" />
-</security:authorize>
 <div class="container-fluid">
     <jsp:include page="common/nav-bar.jsp"></jsp:include>
     <div class="container">
@@ -52,26 +48,25 @@
                     <div class="card-header bg-primary">
                         BẢNG TIN HỌC MÃI
                     </div>
-                    <div class="card-body">
+                    <div id="news-content" class="card-body">
                         <ul>
                             <li>
-                                <a><i class="fa fa-arrow-circle-right"></i>
+                                <a>tin 1</a>
+                            </li>
+                            <li>
+                                <a>
                                     tin 1</a>
                             </li>
                             <li>
-                                <a><i class="fa fa-arrow-circle-right"></i>
+                                <a>
                                     tin 1</a>
                             </li>
                             <li>
-                                <a><i class="fa fa-arrow-circle-right"></i>
+                                <a>
                                     tin 1</a>
                             </li>
                             <li>
-                                <a><i class="fa fa-arrow-circle-right"></i>
-                                    tin 1</a>
-                            </li>
-                            <li>
-                                <a><i class="fa fa-arrow-circle-right"></i>
+                                <a>
                                     tin 1</a>
                             </li>
                         </ul>
@@ -99,7 +94,7 @@
             <span class="text-center" style="font-size: 32px; font-weight: 500">CHẤT LƯỢNG</span><br>
             <span>Cam kết với những khóa học chât lượng tốt nhất</span>
         </div>
-        <div >
+        <div>
             <img class="mx-auto d-block" src="/resources/images/icon_4.png">
             <br>
             <span class="text-center" style="font-size: 32px; font-weight: 500">GIẢI THƯỞNG</span><br>
@@ -107,22 +102,51 @@
 
         </div>
     </div>
-
-    <div class="card">
-        <div class="card-header">
-            Những khóa học hot nhất hiện nay
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="">
-
+    <div style="margin-top: 80px" class="container">
+        <div class="card">
+            <div class="card-header bg-primary">
+                <p style="font-family: 'Catamaran', sans-serif; color: #ffffff;font-size: 28px" >Những khóa học hot nhất hiện nay</p>
+            </div>
+            <div class="card-body">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="/resources/images/icon_course1.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/resources/images/icon_course2.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/resources/images/icon_course3.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-
     </div>
-
 
 
     <jsp:include page="common/footer.jsp"></jsp:include>

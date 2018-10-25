@@ -1,3 +1,5 @@
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
         <img src="/resources/images/logo_b_92x88.png" width="58" height="56" alt="">
@@ -9,20 +11,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Giới thiệu</a>
+                <a class="nav-link" href="/about">Giới thiệu</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Các khóa học
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <c:forEach items="${classes}" var="item">
+                        <a class="dropdown-item" href="#">${item.getClassName()}</a>
+                    </c:forEach>
                 </div>
             </li>
             <li class="nav-item">
@@ -42,7 +43,15 @@
         </form>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/login">Đăng nhập</a>
+                <security:authorize access="isAuthenticated()">
+                    <a class="nav-item">
+                    <security:authentication property="principal.username" />
+                    </a>
+                </security:authorize>
+                <security:authorize access="!isAuthenticated()">
+                    <a class="nav-link" href="/login">Đăng nhập</a>
+                </security:authorize>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/register">Đăng ký</a>

@@ -1,4 +1,7 @@
-
+.card{
+    padding: 10px !important;
+    border-radius: 10px;
+}
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -73,4 +76,10 @@
 }
 ul{
     list-style-type: none;
+}
+
+#news-content li:before {
+    content: "\f2b9";
+    font-family: FontAwesome;
+    display: inline-block;
 }

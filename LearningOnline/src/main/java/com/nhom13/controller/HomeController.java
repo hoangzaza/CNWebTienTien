@@ -1,9 +1,10 @@
 package com.nhom13.controller;
 
 import com.nhom13.entity.User;
-import com.nhom13.entity.security.Authority;
 import com.nhom13.entity.security.Role;
 import com.nhom13.entity.security.UserRole;
+import com.nhom13.service.ExamService;
+import com.nhom13.service.GradleService;
 import com.nhom13.service.UserService;
 import com.nhom13.utility.MailConstructor;
 import com.nhom13.utility.SecurityUtility;
@@ -33,19 +34,31 @@ public class HomeController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private ExamService examService;
+
+    @Autowired
+    private GradleService gradleService;
+
     @RequestMapping("/login")
     public String login(){
         return "login";
     }
 
     @RequestMapping("/")
-    public String home(){
+    public String home(Model model){
+        model.addAttribute("classes",gradleService.getListClass());
         return "home";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public String register(){
         return "register";
+    }
+
+    @RequestMapping(value = "/about", method = RequestMethod.GET)
+    public String about(){
+        return "about";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)

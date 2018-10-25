@@ -9,6 +9,11 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd
 		">
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>WEB-INF/db.properties</value>
+		</property>
+	</bean>
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 		<property name="host" value="smtp.gmail.com" />
 		<property name="username" value="nguyenvanhoangcntt2.2@gmail.com" />
@@ -30,11 +35,11 @@
 	<bean id="dataSource"
 		  class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName"
-				  value="com.mysql.jdbc.Driver" />
+				  value="${jdbc.driverClassName}" />
 		<property name="url"
-				  value="jdbc:mysql://localhost:3306/dblearningonline" />
-		<property name="username" value="root" />
-		<property name="password" value="" />
+				  value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
 	</bean>
 
 	<bean id="mySessionFactory"
@@ -45,6 +50,9 @@
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop>
+				<prop key="hibernate.connection.characterEncoding">UTF-8</prop>
+				<prop key="hibernate.connection.charSet">UTF-8</prop>
 			</props>
 		</property>
 	</bean>
