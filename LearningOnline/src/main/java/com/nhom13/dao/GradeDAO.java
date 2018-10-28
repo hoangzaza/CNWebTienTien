@@ -7,4 +7,5 @@ import java.util.List;
 //CLASS
 public interface GradeDAO {
     List<Class> getListClass();
+    Class getClassByID(int id);
 }

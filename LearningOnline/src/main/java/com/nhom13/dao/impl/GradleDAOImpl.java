@@ -24,4 +24,11 @@ public class GradleDAOImpl implements GradeDAO {
         List<Class> classes = session.createQuery(hql).getResultList();
         return classes;
     }
+
+    @Override
+    public Class getClassByID(int id) {
+        Session session = mySessionFactory.getCurrentSession();
+        Class a = (Class) session.get(Class.class, id);
+        return a;
+    }
 }

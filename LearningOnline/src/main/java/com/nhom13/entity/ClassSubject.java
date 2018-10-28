@@ -13,6 +13,14 @@ public class ClassSubject {
     @JoinColumn(name = "class_id")
     private Class c;
 
+    public Set<Exam> getExams() {
+        return exams;
+    }
+
+    public void setExams(Set<Exam> exams) {
+        this.exams = exams;
+    }
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "subject_id")
     private Subject subject;

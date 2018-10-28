@@ -22,7 +22,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <c:forEach items="${classes}" var="item">
-                        <a class="dropdown-item" href="#">${item.getClassName()}</a>
+                        <a class="dropdown-item" href='/course/${item.getClassId()}'>${item.getClassName()}</a>
                     </c:forEach>
                 </div>
             </li>
@@ -30,7 +30,7 @@
                 <a class="nav-link" href="#">Giáo viên</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Phòng thi</a>
+                <a class="nav-link" href="/examtest">Phòng thi</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Hỗ trợ</a>

@@ -18,4 +18,9 @@ public class GradleServiceImpl implements GradleService {
     public List<Class> getListClass() {
         return gradeDAO.getListClass();
     }
+
+    @Override
+    public Class getClassByID(int id) {
+        return gradeDAO.getClassByID(id);
+    }
 }

@@ -13,6 +13,9 @@ public class Exam {
     @Column(name = "exam_name")
     private String examName;
 
+    @Column(name = "exam_time")
+    private int examTime;
+
     @OneToMany(mappedBy = "exam" , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Question> questions;
 
@@ -59,5 +62,13 @@ public class Exam {
         this.examName = examName;
         this.questions = questions;
         this.classSubject = classSubject;
+    }
+
+    public int getExamTime() {
+        return examTime;
+    }
+
+    public void setExamTime(int examTime) {
+        this.examTime = examTime;
     }
 }

@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ExamService {
     List<Exam> getListExam();
+    List<Exam> getListExamByClassSubject(int classID, int subjectID);
 }

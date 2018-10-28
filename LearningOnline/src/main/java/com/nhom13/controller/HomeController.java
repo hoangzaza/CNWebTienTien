@@ -57,7 +57,8 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/about", method = RequestMethod.GET)
-    public String about(){
+    public String about(Model model){
+        model.addAttribute("classes",gradleService.getListClass());
         return "about";
     }
 

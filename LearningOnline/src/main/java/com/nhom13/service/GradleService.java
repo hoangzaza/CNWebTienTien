@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface GradleService {
     List<Class> getListClass();
+    Class getClassByID(int id);
 }

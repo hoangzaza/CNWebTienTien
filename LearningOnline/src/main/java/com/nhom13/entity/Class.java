@@ -14,6 +14,14 @@ public class Class {
     @Column(name = "class_name")
     private String className;
 
+    public Set<ClassSubject> getClassSubjects() {
+        return classSubjects;
+    }
+
+    public void setClassSubjects(Set<ClassSubject> classSubjects) {
+        this.classSubjects = classSubjects;
+    }
+
     @OneToMany(mappedBy = "c", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
     private Set<ClassSubject> classSubjects;

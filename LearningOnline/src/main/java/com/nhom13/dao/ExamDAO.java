@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ExamDAO {
     List<Exam> getListExam();
+    List<Exam> getListExamByClassSubject(int classID, int subjectID);
 }
