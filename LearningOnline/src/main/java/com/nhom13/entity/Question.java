@@ -14,17 +14,15 @@ public class Question {
     @OneToMany(mappedBy = "question", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Answer> answers;
 
-    @ManyToOne
-    @JoinColumn(name = "exam_id")
-    private Exam exam;
+    @OneToMany(mappedBy = "question",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    private Set<QuestionExam> questionExams;
 
     public Question() {
     }
 
-    public Question(String questionContent, Set<Answer> answers, Exam exam) {
+    public Question(String questionContent, Set<Answer> answers) {
         this.questionContent = questionContent;
         this.answers = answers;
-        this.exam = exam;
     }
 
     public int getQuestionId() {
@@ -51,11 +49,4 @@ public class Question {
         this.answers = answers;
     }
 
-    public Exam getExam() {
-        return exam;
-    }
-
-    public void setExam(Exam exam) {
-        this.exam = exam;
-    }
 }

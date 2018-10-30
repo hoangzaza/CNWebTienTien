@@ -24,4 +24,11 @@ public class SubjectDAOImpl implements SubjectDAO {
         List<Subject> subjectList = session.createQuery(hql).getResultList();
         return subjectList;
     }
+
+    @Override
+    public Subject getSubjectById(int id) {
+        Session session = mySessionFactory.getCurrentSession();
+        Subject subject = session.get(Subject.class,id);
+        return subject;
+    }
 }

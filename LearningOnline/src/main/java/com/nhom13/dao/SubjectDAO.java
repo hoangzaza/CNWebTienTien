@@ -5,5 +5,7 @@ import com.nhom13.entity.Subject;
 import java.util.List;
 
 public interface SubjectDAO {
-    public List<Subject> getListSubjects();
+    List<Subject> getListSubjects();
+    Subject getSubjectById(int id);
+
 }

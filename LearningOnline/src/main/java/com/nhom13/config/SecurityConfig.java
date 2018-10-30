@@ -32,12 +32,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final String[] PUBLIC_MATCHERS = {
             "/resources/**",
+            "/quiz/**",
+            "/examtest/**",
             "/",
             "/newUser",
             "/forgetPassword",
             "/login",
             "/register",
-            "/examtest",
             "/about"
     };
 

@@ -30,6 +30,7 @@ public class ExamOnlineController {
         model.addAttribute("classes",gradleService.getListClass());
         model.addAttribute("exams",examService.getListExam());
         model.addAttribute("subjects",subjectService.getListSubjects());
+        model.addAttribute("class1",gradleService.getClassByID(1));
         return "examHome";
     }
 
@@ -38,7 +39,19 @@ public class ExamOnlineController {
                                @RequestParam(value = "subjectid",required = false) int subjectid, Model model){
         model.addAttribute("classes",gradleService.getListClass());
         model.addAttribute("subjects",subjectService.getListSubjects());
+        if(classid != -1){
+            model.addAttribute("class1",gradleService.getClassByID(classid));
+        }
+        if(subjectid != -1){
+            model.addAttribute("subject",subjectService.getSubjectById(subjectid));
+        }
         model.addAttribute("exams",examService.getListExamByClassSubject(classid,subjectid));
         return "examHome";
+    }
+
+    @RequestMapping(value = "/{examid}")
+    public String examDetail(@PathVariable("examid") int examId, Model model){
+        model.addAttribute("exam",examService.getExamById(examId));
+        return "examDetail";
     }
 }

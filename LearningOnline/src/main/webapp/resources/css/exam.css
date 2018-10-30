@@ -5,3 +5,25 @@
 ul li{
     cursor: pointer;
 }
+
+.subject-name{
+    height: 34px;
+    line-height: 34px;
+    background-color: #0072bc;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.start-quiz{
+    height: 70px;
+    width: 270px;
+    background: #337ab7 url(/resources/images/clock.png) no-repeat scroll 10px center;
+    padding-left: 60px;
+    box-shadow: 2px 3px 3px 0px rgba(99, 99, 99, 0.75);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}

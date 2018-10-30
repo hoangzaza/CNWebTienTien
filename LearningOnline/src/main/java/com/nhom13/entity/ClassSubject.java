@@ -25,7 +25,7 @@ public class ClassSubject {
     @JoinColumn(name = "subject_id")
     private Subject subject;
 
-    @OneToMany(mappedBy = "classSubject")
+    @OneToMany(mappedBy = "classSubject", fetch = FetchType.EAGER)
     private Set<Exam> exams;
 
     public ClassSubject(Class c, Subject subject) {

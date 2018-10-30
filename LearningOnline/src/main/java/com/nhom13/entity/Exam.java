@@ -16,8 +16,9 @@ public class Exam {
     @Column(name = "exam_time")
     private int examTime;
 
-    @OneToMany(mappedBy = "exam" , cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<Question> questions;
+    @OneToMany(mappedBy = "exam",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    private Set<QuestionExam> questionExams;
+
 
     @ManyToOne
     @JoinColumn(name = "class_subject_id")
@@ -39,14 +40,6 @@ public class Exam {
         this.examName = examName;
     }
 
-    public Set<Question> getQuestions() {
-        return questions;
-    }
-
-    public void setQuestions(Set<Question> questions) {
-        this.questions = questions;
-    }
-
     public ClassSubject getClassSubject() {
         return classSubject;
     }
@@ -58,10 +51,19 @@ public class Exam {
     public Exam() {
     }
 
-    public Exam(String examName, Set<Question> questions, ClassSubject classSubject) {
+    public Exam(String examName, int examTime, Set<QuestionExam> questionExams, ClassSubject classSubject) {
         this.examName = examName;
-        this.questions = questions;
+        this.examTime = examTime;
+        this.questionExams = questionExams;
         this.classSubject = classSubject;
+    }
+
+    public Set<QuestionExam> getQuestionExams() {
+        return questionExams;
+    }
+
+    public void setQuestionExams(Set<QuestionExam> questionExams) {
+        this.questionExams = questionExams;
     }
 
     public int getExamTime() {

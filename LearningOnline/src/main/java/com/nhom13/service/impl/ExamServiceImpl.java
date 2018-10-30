@@ -21,4 +21,10 @@ public class ExamServiceImpl implements ExamService {
     public List<Exam> getListExamByClassSubject(int classID, int subjectID) {
         return examDAO.getListExamByClassSubject(classID,subjectID);
     }
+
+    @Override
+    public Exam getExamById(int id) {
+        return examDAO.getExamById(id);
+    }
+
 }

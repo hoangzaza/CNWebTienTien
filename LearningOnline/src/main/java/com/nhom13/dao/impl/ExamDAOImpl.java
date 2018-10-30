@@ -29,10 +29,30 @@ public class ExamDAOImpl implements ExamDAO {
     @Override
     public List<Exam> getListExamByClassSubject(int classID, int subjectID) {
         Session session = mySessionFactory.getCurrentSession();
-        String sql = "SELECT e.exam_id, e.exam_name, e.exam_time FROM exam e,class_subject c WHERE e.class_subject_id = c.class_subject_id AND c.class_id= :classid AND c.subject_id = :subjectid ";
-        SQLQuery query = session.createSQLQuery(sql);
-        query.setParameter("classid",classID);
-        query.setParameter("subjectid",subjectID);
+        String sql[] = {"SELECT e.exam_id, e.exam_name, e.exam_time FROM exam e,class_subject c WHERE e.class_subject_id = c.class_subject_id AND c.class_id= :classid AND c.subject_id = :subjectid "
+        ,"SELECT e.exam_id, e.exam_name, e.exam_time FROM exam e,class_subject c WHERE e.class_subject_id = c.class_subject_id AND c.class_id= :classid",
+        "SELECT e.exam_id, e.exam_name, e.exam_time FROM exam e,class_subject c WHERE e.class_subject_id = c.class_subject_id AND c.subject_id = :subjectid "};
+        SQLQuery query = null;
+        if(classID != -1 && subjectID != -1){
+            query = session.createSQLQuery(sql[0]);
+            query.setParameter("classid",classID);
+            query.setParameter("subjectid",subjectID);
+        }
+
+        if(classID == -1 && subjectID != -1){
+            query = session.createSQLQuery(sql[2]);
+            query.setParameter("subjectid",subjectID);
+        }
+
+        if(classID != -1 && subjectID == -1){
+            query = session.createSQLQuery(sql[1]);
+            query.setParameter("classid",classID);
+        }
+
+        if(classID ==-1 && subjectID == -1){
+            return getListExam();
+        }
+
         List<Object[]> rows = query.list();
         List<Exam> result = new ArrayList<>();
         for(Object[] row  : rows){
@@ -43,6 +63,13 @@ public class ExamDAOImpl implements ExamDAO {
             result.add(exam);
         }
         return result;
+    }
+
+    @Override
+    public Exam getExamById(int examId) {
+        Session session = mySessionFactory.getCurrentSession();
+        Exam exam = session.get(Exam.class,examId);
+        return exam;
     }
 
 
