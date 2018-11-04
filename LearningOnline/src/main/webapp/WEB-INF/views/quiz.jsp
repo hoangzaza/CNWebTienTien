@@ -11,15 +11,55 @@
 <head>
     <title>${exam.examName}</title>
     <jsp:include page="common/header.jsp"></jsp:include>
+    <link rel="stylesheet" type="text/css" href="/resources/css/exam.css"/>
 </head>
 <body>
-<p id="clock">Thời gian làm bài : <span id="minutes">${exam.examTime}</span> phút <span id="milisecons">0 </span> giây</p>
-<c:forEach items="${exam.questionExams}" var="question">
-    ${question.question.questionContent}<br/>
-    <c:forEach items="${question.question.answers}" var="answer">
-        <input type="checkbox" value=""/>${answer.answerContent}<br/>
+<jsp:include page="common/nav-bar.jsp"></jsp:include>
+<div class="container" style="min-height: 500px">
+    <p id="clock">Thời gian làm bài : <span id="minutes">${exam.examTime}</span> phút <span id="milisecons">0 </span>
+        giây</p>
+    <form id="form1" action="/quiz/save" method="post">
+        <input type="hidden" id="doexam" name="doexam" value="${doexam}"/>
+        <input type="hidden" value="${currentpage}" name="currentpage"/>
+        <input type="hidden" value="${exam.examId}" name="examid">
+        <input type="hidden" value="${pagecount}" name="totalpage">
+    <c:forEach items="${questions}" var="question" varStatus="loop">
+        <span>Câu hỏi</span> ${(currentpage -1) * 5 + loop.index+1 } ${question.questionContent}<br/>
+        <c:forEach items="${question.answers}" var="answer" varStatus="count">
+            <input class="answer" type="checkbox" value="${question.questionId}_${answer.answerId}"/> &#${count.index+65} ${answer.answerContent}<br/>
+        </c:forEach>
     </c:forEach>
-</c:forEach>
+        <c:choose>
+            <c:when test="${currentpage < pagecount}">
+                <input type="submit" class="btn btn-primary" value="Trang tiếp"/>
+            </c:when>
+            <c:otherwise>
+                <input type="submit" class="btn btn-primary" value="Nộp bài"/>
+            </c:otherwise>
+        </c:choose>
+
+    </form>
+
+    <ul class="pagination">
+        <c:forEach var="i" begin="1" end="${pagecount}">
+            <c:choose>
+                <c:when test="${i == currentpage}">
+                    <li class="page-item active">
+                        <span class="page-link">
+                            ${i}
+                            <span class="sr-only">
+                                (current)
+                            </span>
+                        </span>
+                    </li>
+                </c:when>
+                <c:otherwise>
+                    <li class="page-item"><a href="/quiz/${exam.examId}/${i}"><c:out value="${i}"/></a></li>
+                </c:otherwise>
+            </c:choose>
+        </c:forEach>
+    </ul>
+</div>
 
 <jsp:include page="common/footer.jsp"></jsp:include>
 <script src="/resources/js/quiz.js"></script>

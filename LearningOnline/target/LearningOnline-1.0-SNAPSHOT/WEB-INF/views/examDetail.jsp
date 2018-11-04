@@ -9,11 +9,17 @@
 <html>
 <head>
     <title>${exam.examName}</title>
+    <jsp:include page="common/header.jsp"></jsp:include>
     <link rel="stylesheet" type="text/css" href="/resources/css/exam.css" />
 </head>
 <body>
+
+<jsp:include page="common/nav-bar.jsp"></jsp:include>
+<div class="container" style="min-height: 400px">
 ${exam.examName}
 ${exam.examTime}
-<input type="button" class="start-quiz btn btn-primary" onclick="javascript: window.open('/quiz/${exam.examId}', '_blank', '');" value="BẮT ĐẦU LÀM BÀI"/>
+<input type="button" class="start-quiz btn btn-primary" onclick="javascript: window.open('/quiz/${exam.examId}/1', '_blank', '');" value="BẮT ĐẦU LÀM BÀI"/>
+</div>
+<jsp:include page="common/footer.jsp"></jsp:include>
 </body>
 </html>
