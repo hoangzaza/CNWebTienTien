@@ -7,4 +7,5 @@ import java.util.List;
 public interface QuestionService {
     List<Question> getListQuestionByPage(int examID, int page, int total);
     int getQuestionCount(int examId);
+    List<Integer> getListAnswers(int questionId);
 }

@@ -23,4 +23,11 @@ public class QuestionServiceImpl implements QuestionService {
     public int getQuestionCount(int examId) {
         return questionDAO.getQuestionCount(examId);
     }
+
+    @Override
+    public List<Integer> getListAnswers(int questionId) {
+        return questionDAO.getListAnswer(questionId);
+    }
+
+
 }

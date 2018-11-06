@@ -4,7 +4,8 @@
     <a class="navbar-brand" href="#">
         <img src="/resources/images/logo_b_92x88.png" width="58" height="56" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -17,14 +18,22 @@
                 <a class="nav-link" href="/about">Giới thiệu</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Các khóa học
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <c:forEach items="${classes}" var="item">
-                        <a class="dropdown-item" href='/course/${item.getClassId()}'>${item.getClassName()}</a>
+                        <li class="dropdown-submenu"><div class="dropdown-item dropdown-toggle"
+                                                        href="#">${item.getClassName()}</div>
+                            <ul class="dropdown-menu">
+                                <c:forEach items="${item.getClassSubjects()}" var="classsubject">
+                                    <li><a class="dropdown-item" href="/course/${item.getClassId()}/${classsubject.getSubject().getSubjectId()}">${classsubject.getSubject().getSubjectName()}</a></li>
+                                </c:forEach>
+                            </ul>
+                        </li>
                     </c:forEach>
-                </div>
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Giáo viên</a>
@@ -45,7 +54,7 @@
             <li class="nav-item">
                 <security:authorize access="isAuthenticated()">
                     <a class="nav-item">
-                    <security:authentication property="principal.username" />
+                        <security:authentication property="principal.username"/>
                     </a>
                 </security:authorize>
                 <security:authorize access="!isAuthenticated()">

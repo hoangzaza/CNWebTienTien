@@ -21,8 +21,8 @@ public class CourseController {
     @Autowired
     private GradleService gradleService;
 
-    @RequestMapping("/{gradle}")
-    public String getGradleListCourse(Model model, @PathVariable("gradle") int gradle){
+    @RequestMapping("/{gradle}/${subject}")
+    public String getGradleListCourse(Model model, @PathVariable("gradle") int gradle, @PathVariable("subject") int subjectId){
         Class a = gradleService.getClassByID(gradle);
 //        System.out.println(a.getClassSubjects().iterator().next().getSubject().getSubjectName());
         Set<ClassSubject> classSubjects = a.getClassSubjects();

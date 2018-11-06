@@ -76,7 +76,6 @@
 
         </div>
     </div>
-
     <h2 class="section-title text-center">
         Chào mừng bạn đã đến với hệ thống Học Mãi
     </h2>

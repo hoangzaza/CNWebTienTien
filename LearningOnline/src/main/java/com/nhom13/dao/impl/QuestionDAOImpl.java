@@ -63,5 +63,20 @@ public class QuestionDAOImpl implements QuestionDAO {
         return ((BigInteger)((org.hibernate.query.Query) query).uniqueResult()).intValue();
     }
 
+    @Override
+    public List<Integer> getListAnswer(int questionId) {
+        String sql = "select a.answer_id from question q, answer a WHERE q.question_id = a.question_id and q.question_id = :questionId and a.is_true = 1";
+        Session session = mySessionFactory.getCurrentSession();
+        List<Integer> results = new ArrayList<>();
+        SQLQuery query = session.createSQLQuery(sql);
+        query.setParameter("questionId",questionId);
+        List<Object> rows = query.list();
+        for(Object row  : rows){
+            int ans = Integer.parseInt(row+"");
+            results.add(ans);
+        }
+        return results;
+    }
+
 
 }
