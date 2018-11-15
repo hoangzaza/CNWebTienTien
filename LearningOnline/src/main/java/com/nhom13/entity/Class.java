@@ -24,6 +24,7 @@ public class Class {
 
     @OneToMany(mappedBy = "c", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
+    @OrderBy()
     private Set<ClassSubject> classSubjects;
 
     public int getClassId() {

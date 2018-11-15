@@ -2,7 +2,9 @@ package com.nhom13.controller;
 
 import com.nhom13.entity.Class;
 import com.nhom13.entity.ClassSubject;
+import com.nhom13.entity.Course;
 import com.nhom13.entity.Subject;
+import com.nhom13.service.ClassSubjectService;
 import com.nhom13.service.GradleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,17 +23,18 @@ public class CourseController {
     @Autowired
     private GradleService gradleService;
 
-    @RequestMapping("/{gradle}/${subject}")
+    @Autowired
+    private ClassSubjectService classSubjectService;
+
+    @RequestMapping("/{gradle}/{subject}")
     public String getGradleListCourse(Model model, @PathVariable("gradle") int gradle, @PathVariable("subject") int subjectId){
-        Class a = gradleService.getClassByID(gradle);
-//        System.out.println(a.getClassSubjects().iterator().next().getSubject().getSubjectName());
-        Set<ClassSubject> classSubjects = a.getClassSubjects();
-        List<Subject> listSubjects = new ArrayList<Subject>();
-        for (ClassSubject classSubject : classSubjects){
-            listSubjects.add(classSubject.getSubject());
-        }
+        ClassSubject classSubject = classSubjectService.getClassSubject(gradle,subjectId);
+        Set<Course> courses = classSubject.getCourses();
+
         model.addAttribute("classes",gradleService.getListClass());
-        model.addAttribute("subjects",listSubjects);
+        model.addAttribute("courses",courses);
+        System.out.println(courses.size());
+
         return "course";
     }
 }

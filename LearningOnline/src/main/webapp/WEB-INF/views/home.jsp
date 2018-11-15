@@ -1,4 +1,5 @@
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: HoangNV
@@ -50,25 +51,15 @@
                     </div>
                     <div id="news-content" class="card-body">
                         <ul>
-                            <li>
-                                <a>tin 1</a>
-                            </li>
-                            <li>
-                                <a>
-                                    tin 1</a>
-                            </li>
-                            <li>
-                                <a>
-                                    tin 1</a>
-                            </li>
-                            <li>
-                                <a>
-                                    tin 1</a>
-                            </li>
-                            <li>
-                                <a>
-                                    tin 1</a>
-                            </li>
+                            <c:forEach items="${news}" var="aaa">
+                                <li>
+                                    <a href="${aaa.urlNews}" target="_blank">
+                                        <i class="icon-list"></i>
+                                        <span>${aaa.newsContent}</span>
+                                    </a>
+                                </li>
+                            </c:forEach>
+
                         </ul>
                     </div>
                 </div>
@@ -104,7 +95,8 @@
     <div style="margin-top: 80px" class="container">
         <div class="card">
             <div class="card-header bg-primary">
-                <p style="font-family: 'Catamaran', sans-serif; color: #ffffff;font-size: 28px" >Những khóa học hot nhất hiện nay</p>
+                <p style="font-family: 'Catamaran', sans-serif; color: #ffffff;font-size: 28px">Những khóa học hot nhất
+                    hiện nay</p>
             </div>
             <div class="card-body">
                 <div class="card-group">

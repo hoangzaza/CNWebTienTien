@@ -27,3 +27,18 @@ ul li{
     font-weight: bold;
     border-radius: 6px;
 }
+
+.item-menu{
+    width: 100%;
+}
+
+.btn-group .dropdown-toggle::after{
+    right: 0px;
+    position: absolute;
+    top: 30%;
+}
+
+.btn-group{
+    width: 100%;
+    height: 40px;
+}

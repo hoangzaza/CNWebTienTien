@@ -18,6 +18,35 @@ public class Subject {
     @JsonIgnore
     private Set<ClassSubject> classSubjects;
 
+    public Subject() {
+    }
+
+    public Subject(String subjectName, Set<ClassSubject> classSubjects, Set<Teacher> teachers) {
+        this.subjectName = subjectName;
+        this.classSubjects = classSubjects;
+        this.teachers = teachers;
+    }
+
+    public Set<ClassSubject> getClassSubjects() {
+        return classSubjects;
+    }
+
+    public void setClassSubjects(Set<ClassSubject> classSubjects) {
+        this.classSubjects = classSubjects;
+    }
+
+    public Set<Teacher> getTeachers() {
+        return teachers;
+    }
+
+    public void setTeachers(Set<Teacher> teachers) {
+        this.teachers = teachers;
+    }
+
+    @OneToMany(mappedBy = "subject", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JsonIgnore
+    private Set<Teacher> teachers;
+
     public int getSubjectId() {
         return subjectId;
     }

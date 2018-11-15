@@ -78,8 +78,16 @@ ul{
     list-style-type: none;
 }
 
-#news-content li:before {
-    content: "\f2b9";
-    font-family: FontAwesome;
+/*#news-content li:before {*/
+    /*content: "\f1ea";*/
+    /*font-family: FontAwesome;*/
+    /*display: inline-block;*/
+/*}*/
+.icon-list{
+    background: rgba(0, 0, 0, 0) url(/resources/images/ico_plus.png) no-repeat scroll -140px -68px;
     display: inline-block;
+    height: 14px;
+    margin: 2px 4px 2px 0;
+    width: 13px;
+    vertical-align: top;
 }

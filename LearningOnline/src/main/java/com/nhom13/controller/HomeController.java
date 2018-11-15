@@ -5,6 +5,7 @@ import com.nhom13.entity.security.Role;
 import com.nhom13.entity.security.UserRole;
 import com.nhom13.service.ExamService;
 import com.nhom13.service.GradleService;
+import com.nhom13.service.NewsService;
 import com.nhom13.service.UserService;
 import com.nhom13.utility.MailConstructor;
 import com.nhom13.utility.SecurityUtility;
@@ -40,6 +41,9 @@ public class HomeController {
     @Autowired
     private GradleService gradleService;
 
+    @Autowired
+    private NewsService newsService;
+
     @RequestMapping("/login")
     public String login(){
         return "login";
@@ -48,6 +52,7 @@ public class HomeController {
     @RequestMapping("/")
     public String home(Model model){
         model.addAttribute("classes",gradleService.getListClass());
+        model.addAttribute("news",newsService.getListNews(5));
         return "home";
     }
 

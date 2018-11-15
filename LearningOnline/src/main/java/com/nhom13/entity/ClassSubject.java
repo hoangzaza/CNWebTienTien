@@ -28,6 +28,17 @@ public class ClassSubject {
     @OneToMany(mappedBy = "classSubject", fetch = FetchType.EAGER)
     private Set<Exam> exams;
 
+    public Set<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Set<Course> courses) {
+        this.courses = courses;
+    }
+
+    @OneToMany(mappedBy = "classSubject",fetch = FetchType.EAGER)
+    private Set<Course> courses;
+
     public ClassSubject(Class c, Subject subject) {
         this.c = c;
         this.subject = subject;
