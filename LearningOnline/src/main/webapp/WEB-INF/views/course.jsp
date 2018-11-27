@@ -16,7 +16,7 @@
 <body>
 <jsp:include page="common/nav-bar.jsp"></jsp:include>
 
-<div class="container">
+<div class="container" style="margin-top: 10px">
     <div class="row">
         <div class="col-lg-3 col-sm-3">
             <ul class="nav nav-pills flex-column">
@@ -87,29 +87,108 @@
             </ul>
         </div>
         <div class="col-lg-9 col-sm-9">
-            <div class="row">
-                <div class="col-lg-4 col-xs-4">
-                    <div class="course-grid-item">
-
+            <c:forEach var="items" items="${courses}" varStatus="status">
+                <c:if test="${(status.index) % 3 == 0}">
+                    <div class="row">
+                    <div class="col-lg-4 col-xs-4">
+                        <div class="course-grid-item">
+                                    <div class="course-grid-image">
+                                        <a href="/course/courseDetail/${items.courseId}">
+                                            <img src="${items.urlIcon}" alt="${items.courseName}"/>
+                                        </a>
+                                    </div>
+                                    <div class="course-grid-info">
+                                        <h3 class="course-grid-name">
+                                            ${items.courseName} - Thầy ${items.teacher.teacherName}
+                                        </h3>
+                                        <div class="course-closing-date">
+                                            <span class="cgt-label">Thời gian học:</span> ${items.time} ngày
+                                            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="${items.courseName}"></i>
+                                        </div>
+                                        <div class="course-grid-teacher">
+                                            <span>Giáo viên :</span>
+                                            <a href="#">Thầy ${items.teacher.teacherName}</a>
+                                        </div>
+                                        <div class="course-action">
+                                            <a class="course-view-more" href="/course/courseDetail/${items.courseId}">
+                                                Chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-xs-4">
-                    <div>
-
+                </c:if>
+                <c:if test="${(status.index) % 3 == 1}">
+                    <div class="col-lg-4 col-xs-4">
+                        <div class="course-grid-item">
+                                        <div class="course-grid-image">
+                                            <a href="#">
+                                                <img src="${items.urlIcon}" alt="${items.courseName}" href="/course/courseDetail/${items.courseId}">
+                                            </a>
+                                        </div>
+                                        <div class="course-grid-info">
+                                            <h3 class="course-grid-name">
+                                                    ${items.courseName} - Thầy ${items.teacher.teacherName}
+                                            </h3>
+                                            <div class="course-closing-date">
+                                                <span class="cgt-label">Thời gian học:</span> ${items.time} ngày
+                                                <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="${items.courseName}"></i>
+                                            </div>
+                                            <div class="course-grid-teacher">
+                                                <span>Giáo viên :</span>
+                                                <a href="#">Thầy ${items.teacher.teacherName}</a>
+                                            </div>
+                                            <div class="course-action">
+                                                <a class="course-view-more" href="/course/courseDetail/${items.courseId}">
+                                                    Chi tiết
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-xs-4">
-                    <div>
-
+                </c:if>
+                <c:if test="${(status.index) % 3 == 2}">
+                    <div class="col-lg-4 col-xs-4">
+                        <div class="course-grid-item">
+                                        <div class="course-grid-image">
+                                            <a href="/course/courseDetail/${items.courseId}">
+                                                <img src="${items.urlIcon}" alt="${items.courseName}">
+                                            </a>
+                                        </div>
+                                        <div class="course-grid-info">
+                                            <h3 class="course-grid-name">
+                                                    ${items.courseName} - Thầy ${items.teacher.teacherName}
+                                            </h3>
+                                            <div class="course-closing-date">
+                                                <span class="cgt-label">Thời gian học:</span> ${items.time} ngày
+                                                <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="${items.courseName}"></i>
+                                            </div>
+                                            <div class="course-grid-teacher">
+                                                <span>Giáo viên :</span>
+                                                <a href="#">Thầy ${items.teacher.teacherName}</a>
+                                            </div>
+                                            <div class="course-action">
+                                                <a class="course-view-more" href="/course/courseDetail/${items.courseId}">
+                                                    Chi tiết
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                     </div>
+                    </div>
+                </c:if>
+            </c:forEach>
+            <c:if test="${courses.size() % 3 != 0}">
                 </div>
-
-            </div>
+            </c:if>
         </div>
     </div>
 </div>
 
 
+
+
 <jsp:include page="common/footer.jsp"></jsp:include>
+<script src="/resources/js/course.js"></script>
 </body>
 </html>

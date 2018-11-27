@@ -24,6 +24,7 @@
         Nguyễn Văn Hoàng <br/>
         Vũ Đức Việt
     </div>
+    <jsp:include page="cube.jsp"></jsp:include>
 
 
     <jsp:include page="common/footer.jsp"></jsp:include>

@@ -19,6 +19,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -65,6 +66,18 @@ public class HomeController {
     public String about(Model model){
         model.addAttribute("classes",gradleService.getListClass());
         return "about";
+    }
+
+    @RequestMapping(value = "/cube", method = RequestMethod.GET)
+    public String cube(){
+        return "cube";
+    }
+
+    @RequestMapping(value = "/lesson/{lessonId}", method = RequestMethod.GET)
+    public String lesson(Model model,
+                         @PathVariable("lessonId") int lessonId){
+        model.addAttribute("classes",gradleService.getListClass());
+        return "lesson";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)

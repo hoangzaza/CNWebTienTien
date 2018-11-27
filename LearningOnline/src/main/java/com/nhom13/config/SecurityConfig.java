@@ -39,7 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/forgetPassword",
             "/login",
             "/register",
-            "/about"
+            "/about",
+            "/cube"
     };
 
     @Override
