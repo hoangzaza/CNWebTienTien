@@ -45,25 +45,28 @@ public class ManagerTeacherController {
         return "addteacher";
     }
 
-    @PostMapping(path = "/getListTeacherLimit",produces = "text/plain;charset=utf-8")
+      @PostMapping(path = "/getListTeacherLimit",produces = "text/plain;charset=utf-8")
     @ResponseBody
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String getListTeacherLimit(@RequestParam("startitem") int start){
-        String html = "";
         List<Teacher> listTeacherLimit = teacherService.getListTeacherLimit(start);
+        JSONObject listTeacher = new JSONObject();
+        listTeacher.put("message","OK");
+        JSONArray array = new JSONArray();
         for(Teacher teacher : listTeacherLimit){
-            html += "<tr>";
-            html += "<td><input type=\"checkbox\" value=\""+teacher.getTeacherId()+"\"></td>";
-            html += "<td>"+teacher.getTeacherName()+"</td>";
-            html += "<td>"+teacher.getPosition()+"</td>";
-            html += "<td>"+teacher.getWorkPlace()+"</td>";
-            html += "<td>"+teacher.getEmail()+"</td>";
-            html += "<td>"+teacher.getSubject().getSubjectName()+"</td>";
-            html += "  <td class=\"edit\"><i class=\"fa fa-adjust\"></i></td>";
-            html += "</tr>";
+            JSONObject obj = new JSONObject();
+            obj.put("teacherid",teacher.getTeacherId());
+            obj.put("teacher_name",teacher.getTeacherName());
+            obj.put("position",teacher.getPosition());
+            obj.put("work_place",teacher.getWorkPlace());
+            obj.put("email",teacher.getEmail());
+            obj.put("subject_id" , teacher.getSubject().getSubjectId());
+            obj.put("subject",teacher.getSubject().getSubjectName());
+            array.put(obj);
         }
-        return html;
+        listTeacher.put("teachers",array);
+        return listTeacher.toString();
     }
-
     @PostMapping(path = "/deleteTeacher")
     @ResponseBody
     public String deleteTeacher(@RequestParam("teacherid") int start){
