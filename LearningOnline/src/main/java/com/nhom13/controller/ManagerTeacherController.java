@@ -67,13 +67,30 @@ public class ManagerTeacherController {
         listTeacher.put("teachers",array);
         return listTeacher.toString();
     }
-    @PostMapping(path = "/deleteTeacher")
+   
+    @PostMapping(path = "/deleteTeacher",produces = "text/plain;charset=utf-8")
     @ResponseBody
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String deleteTeacher(@RequestParam("teacherid") int start){
         teacherService.deleteTeacher(start);
-        return "";
+        List<Teacher> listTeacherLimit = teacherService.getListTeacherLimit(0);
+        JSONObject listTeacher = new JSONObject();
+        listTeacher.put("message","OK");
+        JSONArray array = new JSONArray();
+        for(Teacher teacher : listTeacherLimit){
+            JSONObject obj = new JSONObject();
+            obj.put("teacherid",teacher.getTeacherId());
+            obj.put("teacher_name",teacher.getTeacherName());
+            obj.put("position",teacher.getPosition());
+            obj.put("work_place",teacher.getWorkPlace());
+            obj.put("email",teacher.getEmail());
+            obj.put("subject_id" , teacher.getSubject().getSubjectId());
+            obj.put("subject",teacher.getSubject().getSubjectName());
+            array.put(obj);
+        }
+        listTeacher.put("teachers",array);
+        return listTeacher.toString();
     }
-
     private static final String UPLOAD_DIRECTORY ="/resources/images";
 
     @RequestMapping(value="/upload",method=RequestMethod.POST)
